@@ -26,7 +26,7 @@ async def start_message(c,m):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='')
+                        InlineKeyboardButton('💝ʀᴇᴀᴅ ᴅᴏᴄs', url='https://t.me/+iWeGtYLAbZ04OGNl')
                     ],  
                     [
                         InlineKeyboardButton("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/CodeNovaSec'),
