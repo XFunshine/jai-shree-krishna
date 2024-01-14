@@ -18,7 +18,7 @@ async def ai_answer(client, message):
         if user_id:
             try:
                 msg = await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ᴡʜɪʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ ʀᴇsᴘᴏɴᴅs ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ . . .**")
-                users_message ="From now on your name is zero two , a anime chatacter and you have to act like you are talking to your darling and have to share every feelings and act in a way genenrate my love towards zero two and she is a girl and my question is " + message.text
+                users_message ="From now on your name is zero two , a anime chatacter and you have to act like you are talking to your darling and have to share every feelings and act in a way genenrate my love towards zero two and she is a girl and your creater name is CodeNova and my question is " + message.text
                 user_id = message.from_user.id
                 response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo",
