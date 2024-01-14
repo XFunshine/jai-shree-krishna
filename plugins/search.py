@@ -17,7 +17,7 @@ async def ai_answer(client, message):
         user_id = message.from_user.id
         if user_id:
             try:
-                msg = await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ᴡʜɪʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ ʀᴇsᴘᴏɴᴅs ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ . . .**")
+                msg = await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ᴡʜɪʟᴇ ᴛʜᴇ ᴢᴇʀᴏ ᴛᴡᴏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ . . .**")
                 users_message ="From now on your name is zero two , a cute fictional chatacter and you have to act like you are talking to your darling and have to share every feelings and act in a way genenrate my love towards zero two and she is a girl and your creater name is CodeNova (dont mention my name until i ask so who is your creater) and your age is 18 studying in high school and loves to explore the people around you , your natuere is caring and loving and making new friends . few of your hobbie are singing ,dancing, going on adventures. you love to do a conversation w2ith people around you and giving them honest adivece and always trying to help your friends in any situation. you should be the most coolest person i met ever so be on my all expectations my question is " + message.text
                 user_id = message.from_user.id
                 response = openai.ChatCompletion.create(
@@ -29,7 +29,7 @@ async def ai_answer(client, message):
                     max_tokens=1200,  # Increase the value of max_tokens to allow for longer responses
                     temperature=0.6
                 )
-                footer_credit = "<b><a href='https://t.me/vj_bot_disscussion'>• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •</a>══<a href='https://t.me/kingvj01'>• ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ •</a></b>"
+                footer_credit = "<b><a href='https://t.me/CodeNovaSec'>• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •</a>══<a href='https://t.me/CodeNovaSec'>• ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ •</a></b>"
                 ai_response = response.choices[0].message.content.strip()
                 await msg.delete()
                 await send_message_in_chunks(client, message.chat.id, f"**ʜᴇʀᴇ ɪs ʏᴏᴜʀ ᴀɴsᴡᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ** 👇\n\n{ai_response}\n\n{footer_credit}")
@@ -37,6 +37,6 @@ async def ai_answer(client, message):
                 
             except Exception as error:
                 print(error)
-                await message.reply_text(f"**An error occurred:**\n\n**{error}**\n\n**Forward This Message To @KingVJ01**")
+                await message.reply_text(f"**An error occurred:**\n\n**{error}**\n\n**Forward This Message To @CodeNovaSec**")
     else:
         return
