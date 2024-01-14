@@ -18,7 +18,7 @@ async def ai_answer(client, message):
         if user_id:
             try:
                 msg = await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ᴡʜɪʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ ʀᴇsᴘᴏɴᴅs ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ . . .**")
-                users_message = message.text
+                users_message ="Your name is zero two" + message.text
                 user_id = message.from_user.id
                 response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo",
