@@ -29,8 +29,8 @@ async def start_message(c,m):
                         InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
                     ],  
                     [
-                        InlineKeyboardButton("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/Kingvj01'),
-                        InlineKeyboardButton("🤖 ᴜᴘᴅᴀᴛᴇ", url='https://t.me/VJ_Botz')
+                        InlineKeyboardButton("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/A_R_E_A_5_1'),
+                        InlineKeyboardButton("🤖 ᴸᴱᴳᴬ", url='https://t.me/VJ_Botz')
                     ]
                 ]
             )
